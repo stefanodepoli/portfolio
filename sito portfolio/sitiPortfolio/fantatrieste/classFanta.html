@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stefano De Poli</title>
+    <link rel="stylesheet" href="assets portfolio/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!--font lato-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!--font Raleway-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="vertMobile">
+    <header>
+        <div class="logo">Stefano De Poli</div>
+        <div class="dropdown-container">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
+                <a href="itaIndex.html">italiano</a>
+                <a href="index.html">home</a>
+                <a href="aboutMe.html">about me</a>
+                <a href="contacts.html">contacts</a>
+            </div>
+        </div>
+    </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
+    <article class="art-port">
+      <div class="artportf">
+        <h2>I will explain my plans soon</h2>
+        <p>I'll wait for you in my portfolio soon</p>
+      </div>
+    </article>
+    <footer>
+      <div class="foot">
+      <p>De Poli Stefano</p> 
+      <p>de poli saf snc</p>
+      <p>p.iva 0452352141</p>
+      </div>
+    </footer>
+  </div>  
+  <div class="orizMobile">
+    <header>
+      <div class="logo">Stefano De Poli</div>
+      <div class="dropdown-container">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
+              <a href="itaIndex.html">italiano</a>
+              <a href="index.html">home</a>
+              <a href="aboutMe.html">about me</a>
+              <a href="contacts.html">contacts</a>
+          </div>
+      </div>
+  </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.querySelector('#dropdown-btn3');
+        var menuList = document.querySelector('.dropdown-content3');
+
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+
+        window.addEventListener('click', function(e) {
+            if (!menuButton.contains(e.target)) {
+                menuList.classList.remove('active');
+            }
+        });
+    });
+  </script>
+
+  <article class="art-port">
+    <div class="artportf">
+      <h2>I will explain my plans soon</h2>
+      <p>I'll wait for you in my portfolio soon</p>
+    </div>
+  </article>
+  <footer>
+    <div class="foot">
+    <p>De Poli Stefano</p> 
+    <p>de poli saf snc</p>
+    <p>p.iva 0452352141</p>
+    </div>
+  </footer>
+</div>
+  <div class="tablet">
+    <header>
+      <div class="logo">Stefano De Poli</div>
+        <div class="line-container">
+           <nav>
+             <ul class="nav">
+              <li><a href="itaIndex.html">italiano</a></li>
+              <li><a href="index.html">home</a></li>
+              <li><a href="aboutMe.html">about me</a></li>
+              <li><a href="contacts.html">contacts</a></li>
+             </ul>
+           </nav>
+        </div>
+    </header>
+    <article class="art-port">
+      <div class="artportf">
+        <h2>I will explain my plans soon</h2>
+        <p>I'll wait for you in my portfolio soon</p>
+      </div>
+    </article>
+    <footer>
+      <div class="foot">
+      <p>De Poli Stefano</p> 
+      <p>de poli saf snc</p>
+      <p>p.iva 0452352141</p>
+      </div>
+    </footer>
+  </div>
+  <div class="desktop">
+    <header>
+      <div class="logo">Stefano De Poli</div>
+        <div class="line-container">
+           <nav>
+             <ul class="nav">
+              <li><a href="itaIndex.html">italiano</a></li>
+              <li><a href="index.html">home</a></li>
+              <li><a href="aboutMe.html">about me</a></li>
+              <li><a href="contacts.html">contacts</a></li>
+             </ul>
+           </nav>
+        </div>
+    </header>
+    <article class="art-port">
+      <div class="artportf">
+        <h2>I will explain my plans soon</h2>
+        <p>I'll wait for you in my portfolio soon</p>
+      </div>
+    </article>
+    <footer>
+      <div class="foot">
+      <p>De Poli Stefano</p> 
+      <p>de poli saf snc</p>
+      <p>p.iva 0452352141</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

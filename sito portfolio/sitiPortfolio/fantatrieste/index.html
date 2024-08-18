@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--predefined parameters, specify character group and page display mode-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title of the web page-->
+    <title>stefano De Poli</title>
+    <!--link to css page-->
+    <link rel="stylesheet" href="assets portfolio/css/style.css">
+    <!--link to google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!--font lato-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!--font Raleway-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!--elements for smartphone device-->
+  <div class="vertMobile">
+     <!--    This HTML code represents a web page header containing a logo, a menu button, and a drop-down
+              menu with several navigation items.-->
+    <header>
+        <div class="logo">fantacalcio</div>
+        <div class="dropdown-container">
+            <button id="dropdown-btn4">Menu</button>
+            <div class="dropdown-content4">
+                <a href="classifiche.html">classifiche</a>
+                <a href="quotazioni.html">about me</a>
+                <a href="regolamento.html">contacts</a>
+                <a href="classigioc.html">portfolio</a>
+            </div>
+        </div>
+    </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn4');
+          var menuList = document.querySelector('.dropdown-content4');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
+     <!--section of a web page with a background image, overlaying text, and a link button.-->
+    <div class="img-screen">
+      <img src="assets portfolio/img/sfondosmart.jpg" alt="work space photo">
+       <div class="center-container">
+          <h1>Stefano De Poli</h1>
+          <h2>Web Developer;v.m.</h2>
+          <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+       </div>
+    </div>
+    <footer>
+       <!--footer of web page--> 
+      <div class="foot">
+      <p>De Poli Stefano</p> 
+      <p>visit my linkednl page</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/il-tuo-nome" target="_blank">LinkedIn</a> <br>
+        <a href="https://github.com/il-tuo-nome" target="_blank">GitHub</a>
+    </div>
+     </div>
+    </footer>
+  </div> 
+  <!--elements for vertical smartphone device--> 
+  <div class="orizMobile">
+    <header>
+      <!--    This HTML code represents a web page header containing a logo, a menu button, and a drop-down
+      menu with several navigation items.-->
+      <div class="logo">Stefano De Poli</div>
+      <div class="dropdown-container">
+          <button id="dropdown-btn3">Menu</button>
+          <div class="dropdown-content3">
+              <a href="itaIndex.html">italiano</a>
+              <a href="aboutMe.html">about me</a>
+              <a href="contacts.html">contacts</a>
+              <a href="portfolio.html">portfolio</a>
+          </div>
+      </div>
+  </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.querySelector('#dropdown-btn3');
+        var menuList = document.querySelector('.dropdown-content3');
+
+        menuButton.addEventListener('click', function() {
+            menuList.classList.toggle('active');
+        });
+
+        window.addEventListener('click', function(e) {
+            if (!menuButton.contains(e.target)) {
+                menuList.classList.remove('active');
+            }
+        });
+    });
+  </script>
+  <!--section of a web page with a background image, overlaying text, and a link button.-->
+  <div class="img-screen">
+    <img src="assets portfolio/img/copia2.jpg" alt="foto ambiente di lavoro">
+     <div class="center-container">
+        <h1>Stefano De Poli</h1>
+        <h2>Web Developer,plc programmer (orizMobile)</h2>
+        <a href="portfolio.html" class="portfolio-button">Portfolio</a>
+     </div>
+  </div>
+  <footer>
+    <!--footer of web page--> 
+   <div class="foot">
+   <p>De Poli Stefano</p> 
+   <p>visit my linkednl page</p>
+   <div class="footer-links">
+     <a href="https://www.linkedin.com/in/il-tuo-nome" target="_blank">LinkedIn</a> <br>
+     <a href="https://github.com/il-tuo-nome" target="_blank">GitHub</a>
+ </div>
+  </div>
+ </footer>
+</div>
+<!--elements for tablet device-->
+  <div class="tablet">
+    <header>
+      <!--web page header with a logo, a navigation bar with links, and a "PORTFOLIO" drop-down menu with further links-->
+       <div class="logo">fantatrieste</div>
+       <div class="line-container">
+         <nav>
+           <ul class="nav">
+             <li><a href="campionato/campGiornata0.html">CAMPIONATO</a></li>
+             <li><a href="classFanta.html">CLASSIFICA FANTA</a></li>
+             <li><a href="medieGioc.html">MEDIE GIOCATORI</a></li>
+             <li><a href="squadre.html">SQUADRE</a></li>
+             <li><a href="quotazionip.html">QUOTAZIONI</a></li>
+             <li><a href="regolamento.html">REGOLAMENTO</a></li>
+             <li><a href="contatti.html">CONTATTI</a></li>
+            <!--
+             <li>
+               <div class="dropdown-container">
+                  <button id="dropdown-btn">PORTFOLIO</button>
+                    <div class="dropdown-content">
+                       <a href="portfolio.html">all projects</a>
+                       <a href="sitiPortfolio/programmazione plc/index.html">programmazione plc</a>
+                       <a href="sitiPortfolio/passione caffè/index.html">passione caffè</a>
+                        <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
+                     </div>
+               </div>
+             </li>
+           </ul>-->
+         </nav>
+       </div>
+     </header>
+         <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           var menuButton = document.querySelector('#dropdown-btn');
+           var menuList = document.querySelector('.dropdown-content');
+   
+           menuButton.addEventListener('click', function() {
+               menuList.classList.toggle('active');
+           });
+   
+           window.addEventListener('click', function(e) {
+               if (!menuButton.contains(e.target)) {
+                   menuList.classList.remove('active');
+               }
+           });
+       });
+     </script>
+     <!--section of a web page with a background image, overlaying text, and a link button.-->
+     <div class="img-screen">
+       <img src="assets portfolio/img/izuddin-helmi-adnan-K5ChxJaheKI-unsplash.jpg" alt="foto ambiente di lavoro">
+        <div class="center-container">
+         <div class="container10">
+           <h1 class="rotating-text">FantaTrieste</h1>
+       </div>
+       <script src="script.js"></script>
+       <script>
+        document.addEventListener("DOMContentLoaded", () => {
+         const text = document.querySelector('.rotating-text');
+         const content = text.textContent;
+        text.innerHTML = '';
+ 
+        for (let i = 0; i < content.length; i++) {
+         const span = document.createElement('span');
+         span.textContent = content[i];
+         span.style.animationDelay = `${i * 0.3}s`; // 2 secondi di ritardo per ciascuna lettera
+         text.appendChild(span);
+        }
+        }); 
+       </script>
+        </div>
+     </div>
+     <footer>
+       <!--footer of web page--> 
+      <div class="foot">
+      <p>copyright</p> 
+      <div class="footer-links">
+       <p> design and managed by STEFANO DE POLI  <a href="https://www.linkedin.com/in/il-tuo-nome" target="_blank">LinkedIn</a> <br></p>
+       <p>visit my github page <a href="https://github.com/il-tuo-nome" target="_blank">GitHub</a></p>
+    </div>
+     </div>
+    </footer>
+  </div>
+  <!--elements for desktop device-->
+  <div class="desktop">
+    <header>
+     <!--web page header with a logo, a navigation bar with links, and a "PORTFOLIO" drop-down menu with further links-->
+      <div class="logo">fantatrieste</div>
+      <div class="line-container">
+        <nav>
+          <ul class="nav">
+            <li><a href="campionato/campGiornata0.html">CAMPIONATO</a></li>
+            <li><a href="classFanta.html">CLASSIFICA FANTA</a></li>
+            <li><a href="medieGioc.html">MEDIE GIOCATORI</a></li>
+            <li><a href="squadre.html">SQUADRE</a></li>
+            <li><a href="quotazionip.html">QUOTAZIONI</a></li>
+            <li><a href="regolamento.html">REGOLAMENTO</a></li>
+            <li><a href="contatti.html">CONTATTI</a></li>
+           <!--
+            <li>
+              <div class="dropdown-container">
+                 <button id="dropdown-btn">PORTFOLIO</button>
+                   <div class="dropdown-content">
+                      <a href="portfolio.html">all projects</a>
+                      <a href="sitiPortfolio/programmazione plc/index.html">programmazione plc</a>
+                      <a href="sitiPortfolio/passione caffè/index.html">passione caffè</a>
+                       <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
+                    </div>
+              </div>
+            </li>
+          </ul>-->
+        </nav>
+      </div>
+    </header>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn');
+          var menuList = document.querySelector('.dropdown-content');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
+    <!--section of a web page with a background image, overlaying text, and a link button.-->
+    <div class="img-screen">
+      <img src="assets portfolio/img/izuddin-helmi-adnan-K5ChxJaheKI-unsplash.jpg" alt="foto ambiente di lavoro">
+       <div class="center-container">
+        <div class="container10">
+          <h1 class="rotating-text">FantaTrieste</h1>
+      </div>
+      <script src="script.js"></script>
+      <script>
+       document.addEventListener("DOMContentLoaded", () => {
+        const text = document.querySelector('.rotating-text');
+        const content = text.textContent;
+       text.innerHTML = '';
+
+       for (let i = 0; i < content.length; i++) {
+        const span = document.createElement('span');
+        span.textContent = content[i];
+        span.style.animationDelay = `${i * 0.3}s`; // 2 secondi di ritardo per ciascuna lettera
+        text.appendChild(span);
+       }
+       }); 
+      </script>
+       </div>
+    </div>
+    <footer>
+      <!--footer of web page--> 
+     <div class="foot">
+     <p>copyright</p> 
+     <div class="footer-links">
+      <p> design and managed by STEFANO DE POLI  <a href="https://www.linkedin.com/in/il-tuo-nome" target="_blank">LinkedIn</a> <br></p>
+      <p>visit my github page <a href="https://github.com/il-tuo-nome" target="_blank">GitHub</a></p>
+   </div>
+    </div>
+   </footer>
+ </div>
+
+</body>
+</html>
