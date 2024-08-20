@@ -129,84 +129,65 @@
   <div class="tablet">
     <header>
       <!--web page header with a logo, a navigation bar with links, and a "PORTFOLIO" drop-down menu with further links-->
-       <div class="logo">fantatrieste</div>
-       <div class="line-container">
-         <nav>
-           <ul class="nav">
-             <li><a href="campionato/campGiornata0.html">CAMPIONATO</a></li>
-             <li><a href="classFanta.html">CLASSIFICA FANTA</a></li>
-             <li><a href="medieGioc.html">MEDIE GIOCATORI</a></li>
-             <li><a href="squadre.html">SQUADRE</a></li>
-             <li><a href="quotazionip.html">QUOTAZIONI</a></li>
-             <li><a href="regolamento.html">REGOLAMENTO</a></li>
-             <li><a href="contatti.html">CONTATTI</a></li>
-            <!--
-             <li>
-               <div class="dropdown-container">
-                  <button id="dropdown-btn">PORTFOLIO</button>
-                    <div class="dropdown-content">
-                       <a href="portfolio.html">all projects</a>
-                       <a href="sitiPortfolio/programmazione plc/index.html">programmazione plc</a>
-                       <a href="sitiPortfolio/passione caffè/index.html">passione caffè</a>
-                        <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
-                     </div>
-               </div>
-             </li>
-           </ul>-->
-         </nav>
+      <div class="logo">Stefano De Poli</div>
+      <div class="line-container">
+        <nav>
+          <ul class="nav">
+            <li><a href="itaIndex.html">italiano</a></li>
+            <li><a href="aboutMe.html">about me</a></li>
+            <li><a href="contacts.html">contacts</a></li>
+            <li>
+              <div class="dropdown-container">
+                 <button id="dropdown-btn2">PORTFOLIO</button>
+                   <div class="dropdown-content2">
+                      <a href="portfolio.html">all projects</a>
+                      <a href="sitiPortfolio/programmazione plc/index.html">programmazione plc</a>
+                      <a href="sitiPortfolio/passione caffè/index.html">passione caffè</a>
+                       <a href="sitiPortfolio/caffeTrieste/index.html">caffè trieste</a>
+                    </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var menuButton = document.querySelector('#dropdown-btn2');
+          var menuList = document.querySelector('.dropdown-content2');
+  
+          menuButton.addEventListener('click', function() {
+              menuList.classList.toggle('active');
+          });
+  
+          window.addEventListener('click', function(e) {
+              if (!menuButton.contains(e.target)) {
+                  menuList.classList.remove('active');
+              }
+          });
+      });
+    </script>
+    <!--section of a web page with a background image, overlaying text, and a link button.-->
+    <div class="img-screen">
+      <img src="assets portfolio/img/copia2.jpg" alt="foto ambiente di lavoro">
+       <div class="center-container">
+          <h1>Stefano De Poli</h1>
+          <h2>Web Developer,plc programmer (tablet)</h2>
+          <a href="portfolio.html" class="portfolio-button">PORTFOLIO</a>
        </div>
-     </header>
-         <script>
-       document.addEventListener('DOMContentLoaded', function() {
-           var menuButton = document.querySelector('#dropdown-btn');
-           var menuList = document.querySelector('.dropdown-content');
-   
-           menuButton.addEventListener('click', function() {
-               menuList.classList.toggle('active');
-           });
-   
-           window.addEventListener('click', function(e) {
-               if (!menuButton.contains(e.target)) {
-                   menuList.classList.remove('active');
-               }
-           });
-       });
-     </script>
-     <!--section of a web page with a background image, overlaying text, and a link button.-->
-     <div class="img-screen">
-       <img src="assets portfolio/img/izuddin-helmi-adnan-K5ChxJaheKI-unsplash.jpg" alt="foto ambiente di lavoro">
-        <div class="center-container">
-         <div class="container10">
-           <h1 class="rotating-text">FantaTrieste</h1>
-       </div>
-       <script src="script.js"></script>
-       <script>
-        document.addEventListener("DOMContentLoaded", () => {
-         const text = document.querySelector('.rotating-text');
-         const content = text.textContent;
-        text.innerHTML = '';
- 
-        for (let i = 0; i < content.length; i++) {
-         const span = document.createElement('span');
-         span.textContent = content[i];
-         span.style.animationDelay = `${i * 0.3}s`; // 2 secondi di ritardo per ciascuna lettera
-         text.appendChild(span);
-        }
-        }); 
-       </script>
-        </div>
      </div>
      <footer>
-       <!--footer of web page--> 
-      <div class="foot">
-      <p>copyright</p> 
-      <div class="footer-links">
-       <p> design and managed by STEFANO DE POLI  <a href="https://www.linkedin.com/in/il-tuo-nome" target="_blank">LinkedIn</a> <br></p>
-       <p>visit my github page <a href="https://github.com/il-tuo-nome" target="_blank">GitHub</a></p>
+      <!--footer of web page--> 
+     <div class="foot">
+     <p>De Poli Stefano</p> 
+     <p>visit my linkednl page</p>
+     <div class="footer-links">
+       <a href="https://www.linkedin.com/in/il-tuo-nome" target="_blank">LinkedIn</a> <br>
+       <a href="https://github.com/il-tuo-nome" target="_blank">GitHub</a>
+   </div>
     </div>
-     </div>
-    </footer>
-  </div>
+   </footer>
+ </div>
   <!--elements for desktop device-->
   <div class="desktop">
     <header>
@@ -219,7 +200,7 @@
             <li><a href="classFanta.html">CLASSIFICA FANTA</a></li>
             <li><a href="medieGioc.html">MEDIE GIOCATORI</a></li>
             <li><a href="squadre.html">SQUADRE</a></li>
-            <li><a href="quotazionip.html">QUOTAZIONI</a></li>
+            <li><a href="quotazioni.html">QUOTAZIONI</a></li>
             <li><a href="regolamento.html">REGOLAMENTO</a></li>
             <li><a href="contatti.html">CONTATTI</a></li>
            <!--

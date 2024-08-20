@@ -111,9 +111,10 @@
     border-radius: 5px;
   }
     /*css pagina about*/
-    article
+    article,.art-about
     {
       background-color: #887373;
+      padding-bottom: 20px;
     }
     .presentation h1
     {
@@ -185,7 +186,7 @@
       text-decoration: none;
       color: #fff;
     }
-     /*pagina contacts*/
+     pagina contacts
      article        
      {
       margin-top: -10px;
@@ -230,19 +231,30 @@
       width: 60px;
       height: 70px;
     }
-  .foot 
-  { 
-    background-color: #333; 
-    text-align: center; 
-    padding: 5px 0px;
-  } 
-  .foot p
-  {
-    font-size: 15px;
-     color: white; 
-     padding: 5px;
-  }           
-}
+    .foot 
+    { 
+      background-color: #333; 
+      text-align: center; 
+      padding: 10px 0px;
+    } 
+    .foot p
+    { margin-top: 5px;
+      font-size: 15px;
+       color: white; 
+       padding: 5px;
+    }  
+    footer a
+    {
+    text-decoration: none;
+    color: black;
+    background-color: #887373;
+    transition: 0.3s;
+    margin-left: 15px;
+    padding: 2px,10px;
+    border: 1px solid white;
+    border-radius: 3px; 
+    }
+    }
 /*orizzontal mobile*/
 @media only screen and (min-width: 481px) and (max-width:800px)
 { .vertMobile
@@ -429,14 +441,14 @@
     .img-about img 
     {
       position: fixed;
-      top: 30%;
-      left: 75%;   
+      top: 25%;
+      left: 73%;   
     }
     .img-about figcaption
     {
       position: fixed;
-      top: 70%;
-      left: 75%;   
+      top: 75%;
+      left: 78%;   
      }
          /*pagina contacts*/
     article
@@ -462,33 +474,67 @@
       padding: 5px 40px;
     }
    /*pagina portfolio*/
-   .art-port
-   { 
-    background-color: #887373;
-    width: 100%; 
-    height: 100vh; 
-   }
-   .artportf
+   .container12
    {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     font-size: 24px; /* dimensione del carattere per esempio */
-   } 
-   .foot 
+     width: 80%;
+     margin: 0 auto;
+     padding: 20px;
+   }
+ 
+   .project1
+   {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #fff;
+     padding: 15px;
+     margin-bottom: 20px;
+     border-radius: 8px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+ 
+   .project-description 
+   {
+     width: 60%;
+   }
+ 
+   .project-image
+   {
+     width: 40%;
+     text-align: right;
+   }
+   .project-image img
+   {
+     width: 130px;
+     height: auto;
+     border-radius: 8px;
+     cursor: pointer;
+     border: 3px,solid,black;
+   }
+    .foot 
    { 
      background-color: #333; 
      text-align: center; 
      padding: 10px 0px;
    } 
    .foot p
-   {
+   { margin-top: 5px;
      font-size: 15px;
       color: white; 
       padding: 5px;
-   }           
- }
+   }  
+   footer a
+   {
+   text-decoration: none;
+   color: black;
+   background-color: #887373;
+   transition: 0.3s;
+   margin-left: 15px;
+   padding: 2px,10px;
+   border: 1px solid white;
+   border-radius: 3px; 
+   }
+}
 /*tablet*/
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
@@ -707,14 +753,14 @@
   .img-about img 
   { 
     position: fixed;
-    top: 30%;
+    top: 24%;
     left: 72%;
     }
   .img-about figcaption
   { 
     position: fixed;
-    top: 69%;
-    left: 70%;
+    top: 85%;
+    left: 75%;
     }
     /*pagina contacts*/
     article
@@ -765,12 +811,12 @@
 
   .project-image
   {
-    width: 30%;
+    width: 40%;
     text-align: right;
   }
   .project-image img
   {
-    width: 130px;
+    width: 400px;
     height: auto;
     border-radius: 8px;
     cursor: pointer;
@@ -783,12 +829,23 @@
     padding: 10px 0px;
   } 
   .foot p
-  {
+  { margin-top: 5px;
     font-size: 15px;
      color: white; 
      padding: 5px;
-  }           
-}
+  }  
+  footer a
+  {
+  text-decoration: none;
+  color: black;
+  background-color: #887373;
+  transition: 0.3s;
+  margin-left: 15px;
+  padding: 2px,10px;
+  border: 1px solid white;
+  border-radius: 3px; 
+  }
+  }
 /*desktop*/
 @media only screen and (min-width:1024px) 
 { .vertMobile

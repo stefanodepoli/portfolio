@@ -978,6 +978,31 @@
     padding:50px 10px ;
     margin-left: 20px;
   }
+  .skill h2
+  {
+    font-size: 28px;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    padding:50px 10px  ;
+    margin-left: 20px;
+  }
+  .skillimg {
+    width: 70%; /* Imposta la larghezza del contenitore al 100% */
+    height: auto; /* Imposta l'altezza del contenitore in base al rapporto dell'immagine */
+    max-width: 600px; /* Puoi regolare la larghezza massima del contenitore come preferisci */
+    margin: 0 auto; /* Per centrare il contenitore orizzontalmente */
+}
+
+.skillimg img {
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: auto; /* Imposta l'altezza dell'immagine in base al rapporto */
+    display: block; /* Assicura che l'immagine sia visualizzata come blocco all'interno del contenitore */
+}
+  .experience li
+  { font-size: 22px;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    padding:0px 10px ;
+    margin-left: 50px;
+  }
   .text-about button
   {
     margin: 40px 40%;
@@ -1035,27 +1060,17 @@
   }
   .portieri {
     padding-left: 3%;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 50px;
   }
-  .portieri a
+  /*
+  table  .portieri
   {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #887373;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      border: 2px,solid,black;
-  
-  }
-  .portieri a:hover
-  {
-    background-color: #5e0f0f;
-    color: white;
-
-  }
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}*/
   table  
   {
     width: 70%;
